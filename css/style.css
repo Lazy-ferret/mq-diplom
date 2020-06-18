@@ -1,415 +1,842 @@
 @font-face {
-    font-family: OpenSans-Regular;
-    src: url(../fonts/OpenSans-Regular.woff);  
-    src: url(../fonts/OpenSans-Regular.woff2);  
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.woff);  
+  src: url(../fonts/OpenSans-Regular.woff2);  
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: OpenSans-Bold;
-    src: url(../fonts/OpenSans-Bold.woff); 
-    src: url(../fonts/OpenSans-Bold.woff2);
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.woff); 
+  src: url(../fonts/OpenSans-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
 
 * {
-    margin: 0;
-    padding: 0; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
+  margin: 0;
+  padding: 0; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 html {
-    font-size: 62.5%;
-    font-family: OpenSans-Regular;
-  }
+  font-size: 62.5%;
+  font-family: OpenSans-Regular;
+}
   
 .page {
-    width: 100vw;
-  }
+  width: 100vw;
+}
  
 /*Header*/
 
 .header {
-    width: 100%;
-    background-image: url("../images/football_767.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    position: relative;
-  }
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
 
 .header::after {
-    content: "";
-    background-color: #191c3f;
-    opacity: 0.8;
-    position: absolute;
-  	top: 0;
-	  left: 0;
-	  right: 0;
-    bottom: 0;
-    z-index: 0;
-  }
+  content: "";
+  background-color: #191c3f;
+  opacity: 0.8;
+  position: absolute;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
 
 .header-content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
 
 .logo-text {
-    display: block;
-    width: 13.5rem;
-    fill: #ffffff;
-    padding-top: 3rem;  
-  }
+  display: block;
+  width: 13.5rem;
+  fill: #ffffff;
+  padding-top: 3rem;  
+}
 
 .header-title {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: #ffffff;
-    padding-top: 13rem;
-    font-size: 2.8rem;
-    font-family: OpenSans-Bold;
-    text-transform: uppercase;
-  }
+  max-width: 100%;
+  color: #ffffff;
+  padding-top: 13rem;
+  font-size: 2.8rem; 
+  font-family: OpenSans-Bold;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.header-title-start {
-    padding-left: 2rem;
-  }
-    
+   
 .header-title-end {
-    max-width: 24rem;
-    padding-top: 3rem;
-    padding-right: 2rem;
-    margin-left: auto;
- }
+  padding-left: 4.5rem;
+}
 
 .stores-links {
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
-    font-size: 0.8rem;
-    font-style: normal;
-    text-transform: uppercase;
-  }
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
 
 .stores {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 
 .store-item {
-    background-color: #5e42b0;
-    width: 28rem;
-    height: 3.5rem;
-    border-radius: 3.5rem;
-    display: flex;
-    align-items: center;
-  }
+  background-color: #5e42b0;
+  width: 28rem;
+  height: 3.5rem;
+  border-radius: 3.5rem;
+  display: flex;
+  align-items: center;
+}
 
 .store-item:nth-child(n+2) {
-    margin-top: 1.5rem;
-  }
+  margin-top: 1.5rem;
+}
 
 .visually-hidden {
-    display: none;
-  }
+  display: none;
+}
 
 .store-logo {
-    fill: #ffffff;
-    width: 2rem;
-    height: 2rem;
-    padding-left: 8rem;
-  }
+  fill: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 8rem;
+}
 
 .store-link {
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    width: 100%;
-  }
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+}
 
 .store-link-content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
 
 .store-link-name {
-    font-family: OpenSans-Bold;
-  }
+  font-family: OpenSans-Bold;
+}
 
 /*MAIN*/
 
 .main-section {
-    position: relative;
-  }
+  position: relative;
+}
 
 .main-section-header {
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #e7e7e7;
-    font-family: OpenSans-Bold;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 22rem;
-  }
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-family: OpenSans-Bold;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 22rem;
+}
 
 .section-athlets .article-image,
 .section-players .article-image {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    position: absolute;
-    top: 8rem;
-  	left: 0;
-	  right: 0;
-  }
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  right: 0;
+}
 
 .article-image {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-  }
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.article-title {
+  display: flex;
+}
+
 
 .main-article {
-    padding-top: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  padding-top: 5rem;
+}
 
 .article-connection {
-    width: 100%;
-    height: 100%;
-    background-color: #fafafa;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
 
 .article-collaboration {
-    width: 100%;
-    height: 100%;
-    background-color: #f5f4f9;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #f5f4f9;
+}
 
 .article-athlets-growth {
-    width: 100%;
-    height: 100%;
-    background-color: #5e42b0;
-    color: #ffffff;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #5e42b0;
+  color: #ffffff;
+}
 
 .article-players-growth {
-    width: 100%;
-    height: 100%;
-    background-color: #090c35;
-    color: #ffffff;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #090c35;
+  color: #ffffff;
+}
 
-  .article-number {
-    font-size: 1.4rem;
-    font-family: OpenSans-Bold;
-    padding-left: 2rem;
-    vertical-align: middle;
-    position: relative;
-  } 
+.article-number {
+  font-size: 1.4rem;
+  font-family: OpenSans-Bold;
+  padding-left: 2rem;
+  vertical-align: middle;
+  position: relative;
+} 
 
 .article-number-growth {
-    color: #000000;
-  }
+  color: #8765dd;
+}
 
 .article-players-growth>.article-number-growth {
-    color: #8765dd;
-  }
+  color: #8765dd;
+}
 
-  .article-number::after {
-    content: "";
-    width: 1.7rem;
-    height: 0.4rem;
-    border-radius: 0.1rem;
-    background-color: #5e42b0;
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: 0.5rem;  
-    left: 2rem;
-  }
+.article-number::after {
+  content: "";
+  width: 1.7rem;
+  height: 0.4rem;
+  border-radius: 0.1rem;
+  background-color: #5e42b0;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0.5rem;  
+  left: 2rem;
+}
 
 .article-number-growth::after {
-    content: "";
-    width: 1.7rem;
-    height: 0.4rem;
-    border-radius: 0.1rem;
-    background-color: #ffffff;
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: 0.5rem;  
-    left: 2rem;
-  }
+  content: "";
+  width: 1.7rem;
+  height: 0.4rem;
+  border-radius: 0.1rem;
+  background-color: #ffffff;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0.5rem;  
+  left: 2rem;
+}
 
 .article-header {
-    font-size: 2.3rem;
-    color: #c1c1c1;
-    font-family: OpenSans-Bold;
-    padding-left: 1rem;
-    text-transform: uppercase;
-  }
+  font-size: 2.3rem;
+  color: #c1c1c1;
+  font-family: OpenSans-Bold;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
 
 .article-content {
-    padding-top: 2.5rem;
-    padding-right: 2rem;
-    padding-bottom: 5rem;
-    padding-left: 2rem;
-    width: 280px;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.8rem;
-  }
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  max-width: 28rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+}
 
 /*SECTION POSSIBILITIES*/
 
-.article-possibilities-active {
-    padding-top: 0;
-    background-image: url("..//images/be-active.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 35rem;
-    background-position: center top;
-  }
+.article-number-container {
+  padding-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  background-position: top center;
+}
+
+.article-possibilities-active .article-number-container {
+  background-image: url("..//images/be-active_640.jpg");
+}
+
+.section-possibilities .main-article {
+  padding-top: 0;
+}
 
 .article-number-possibilities {
-    position: absolute;
-    width: 7rem;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    padding: 0;
-    background-color: #5e42b0; 
-    margin-top: 29.5rem;
-    margin-left: 2rem;
-  }
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 0;
+  background-color: #5e42b0; 
+  margin-top: 29.5rem;
+  margin-left: 2rem;
+}
 
 .article-number-possibilities::after {
-    content: "";
-    width: 1.5rem;
-    height: 0.4rem;
-    border-radius: 0.1rem;
-    background-color: #ffffff;
-    position: absolute;
-    z-index: 0;
-    top: auto;
-    right: auto;
-    bottom: 2rem;  
-    left: 2.62rem;
-    opacity: 0.5;
-  }
+  content: "";
+  width: 1.5rem;
+  height: 0.4rem;
+  border-radius: 0.1rem;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 0;
+  top: auto;
+  right: auto;
+  bottom: 2rem;  
+  left: 2.62rem;
+  opacity: 0.5;
+}
 
 .header-possibilities {
-    padding-top: 38rem;
-    padding-left: 2rem;
-  }
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
 
 .section-possibilities .article-content {
-    padding-bottom: 7.5rem;
-  }
+  padding-bottom: 7.5rem;
+}
 
-.article-possibilities-find {
-    padding-top: 0;
-    background-image: url("..//images/find-contact.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 35rem;
-    background-position: center top;
-  }
+.article-possibilities-find .article-number-container {
+  background-image: url("..//images/find-contact_640.jpg");
+}
 
-.article-possibilities-work {
-    padding-top: 0;
-    background-image: url("..//images/work-it.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 35rem;
-    background-position: center top;
-  }
+.article-possibilities-work .article-number-container {
+  background-image: url("..//images/work-it_640.jpg");
+}
 
 /*FOOTER*/
 
 .footer {
-    width: 100%;
-    background-image: url("../images/game_767.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    position: relative;
-  }
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/game_767.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
   
 .footer::after {
-    content: "";
-    background-color: #191c3f;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-  }
+  content: "";
+  background-color: #191c3f;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
 
 .footer-content-container {
-    position: relative;
-    z-index: 100; 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  position: relative;
+  z-index: 100; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
    
 .logo-container {
-    background-color: #553ba2;
-    width: 7.5rem;
-    height: 7.5rem;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-  }
+  background-color: #553ba2;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin: auto;
+}
 
 .logo {
-    display: block;
-    width: 5rem;
-    fill: #ffffff;
-  }
+  display: block;
+  width: 5rem;
+  fill: #ffffff;
+}
 
 .download {
-    text-transform: uppercase;
-    padding-top: 6rem;
-    font-family: OpenSans-Bold;
-  }
+  text-transform: uppercase;
+  padding-top: 6rem;
+  font-family: OpenSans-Bold;
+}
 
 .download-title {
-    color: #ffffff;
-    font-size: 3.2rem;
-  }
+  color: #ffffff;
+  font-size: 3.2rem;
+}
 
 .download-content {
-    color: #9b8ec1;
-    font-size: 1.4rem;
-    text-align: center;
-    font-family: OpenSans-Regular;
-  }
+  color: #9b8ec1;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: OpenSans-Regular;
+}
 
 .footer .stores-links {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 
 .footer .logo-text {
-   padding-top: 0;
-   padding-bottom: 1rem;
-  } 
-    
+  padding-top: 0;
+  padding-bottom: 1rem;
+} 
+ 
+/*TABLET VERSION*/
+
+@media (min-width: 641px) {
+
+/*Header*/
+
+.header {
+  background-image: url("../images/football_1280.jpg");
+}
+
+.logo-text {
+  width: 20.5rem;
+  padding-top: 4rem;  
+}
+
+.header-title {
+  padding-top: 16rem;
+  font-size: 6.4rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+ 
+.header-title-end {
+  padding-left: 10rem;
+}
+
+.stores-links {
+  padding-top: 30rem;
+  padding-bottom: 8.5rem;
+  font-size: 1.4rem;
+}
+
+.store-item {
+  width: 32rem;
+  height: 8rem;
+  border-radius: 8rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.stores{
+  display: flex;
+}
+
+.store-item:nth-child(n+2) {
+  margin-top: 0;
+}
+
+.store-logo {
+  width: 4rem;
+  height: 4rem;
+  padding-left: 4rem;
+}
+
+.store-link-content {
+  padding-left: 2.5rem;
+}
+
+/*MAIN*/
+
+.main-section-header {
+  font-size: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  padding-left: 3rem;
+}
+
+.section-athlets .main-section-header,
+  .section-athlets .article-title,
+  .section-athlets .article-content {
+  padding-left: 30rem;     
+}
+
+.section-athlets .article-image {
+  margin-left: 0;
+  top: 8rem;
+  overflow: hidden;
+  left: -16rem;
+}
+ 
+.section-players .article-image {
+  margin-right: 0;
+  top: 4.5rem;
+}
+
+.main-article {
+  padding-top: 3rem;
+}
+
+
+.article-number {
+  font-size: 1.8rem;
+  padding-left: 0;
+} 
+
+.article-number::after {
+  content: "";
+  width: 1.9rem;
+  height: 0.5rem;
+  border-radius: 0.2rem;
+  left: 0;
+}
+
+.article-number-growth::after {
+  content: "";
+  width: 1.9rem;
+  height: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.article-header {
+  font-size: 3.2rem;
+}
+
+.article-content {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 0;
+  max-width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.section-players .main-article {
+  padding-left: 3rem;
+}
+
+.section-players .article-content {
+  max-width: 42rem;
+}
+ 
+/*SECTION POSSIBILITIES*/
+
+.article-number-container {
+  height: 58rem;
+}
+
+.article-possibilities-active .article-number-container {
+  background-image: url("..//images/be-active_960.jpg");
+}
+
+.article-number-possibilities {
+  width: 12rem;
+  height: 12rem;
+  margin-top: 50rem;
+  margin-left: 3rem;
+  font-size: 2.4rem;
+}
+
+.article-number-possibilities::after {
+  width: 2.5rem;
+  height: 0.5rem;
+  border-radius: 0.2rem;
+  bottom: 4rem;  
+  left: 4.8rem;
+}
+
+.header-possibilities {
+  font-size: 8rem;  
+  padding-top: 8rem;
+  padding-left: 3rem;
+}
+
+.section-possibilities .article-content {
+  font-size: 2.4rem;
+  padding-left: 3.5rem;
+  padding-bottom: 10rem;
+}
+
+.article-possibilities-find .article-number-container {
+  background-image: url("..//images/find-contact_960.jpg");
+}
+
+.article-possibilities-work .article-number-container {
+  background-image: url("..//images/work-it_640.jpg");
+}
+
+/*FOOTER*/
+
+.footer {
+  background-image: url("../images/game_1280.jpg");
+}
+
+.logo-container {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 3rem;
+  margin-top: 12rem;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.download {
+  padding-top: 8rem;
+}
+
+.download-title {
+  font-size: 8rem;
+}
+
+.download-content {
+  font-size: 3.6rem;
+}
+
+.footer .stores-links {
+  padding-top: 28rem;
+  padding-bottom: 5rem;
+}
+
+.footer .logo-text {
+  padding-top: 0;
+  padding-bottom: 2rem;
+} 
+}
+
+/*DESCTOP VERSION*/
+
+@media (min-width: 961px) {
+
+/*Header*/
+
+.header {
+  background-image: url("../images/football_1920.jpg");
+}
+
+.logo-text {
+  width: 40rem;
+  padding-top: 4rem;  
+}
+
+.header-title {
+  padding-top: 30vh;
+  font-size: 9rem;
+  margin-left: 20rem;
+  margin-right: auto;
+}
+
+ 
+.header-title-end {
+  padding-left: 44rem;
+}
+
+.stores-links {
+  padding-top: 30rem;
+  padding-bottom: 12rem;
+  font-size: 1.4rem;
+}
+
+.store-item {
+  width: 32rem;
+  height: 8rem;
+  border-radius: 3.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/*MAIN*/
+
+.main-section-header {
+  font-size: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  padding-left: 3rem;
+}
+
+.section-athlets .main-section-header,
+ .section-athlets .article-title,
+ .section-athlets .article-content {
+  padding-left: 52vw;
+}
+
+.article-title {
+  padding-top: 4rem;
+}
+
+.section-athlets .article-image {
+  margin-right: 52vw;
+  top: 3rem;
+  right: 0;
+  left: auto;
+  overflow: hidden;
+}
+ 
+.section-players .article-image {
+  margin-right: auto;
+  margin-left: 41.6vw;
+  top: 2rem;
+  left: 0;
+  right: auto;
+  overflow: hidden;
+}
+
+.article-header {
+  font-size: 3.6rem;
+}
+
+.article-content {
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+  max-width: 37.5vw;
+  font-size: 2rem;
+}
+
+.section-players .main-section-header, 
+.section-players .main-article {
+  padding-left: 10vw;
+  box-sizing: border-box;
+}
+
+.section-players .article-content {
+  max-width: 37.5vw;
+}
+ 
+/*SECTION POSSIBILITIES*/
+
+.section-possibilities .main-article {
+  display: flex;
+}
+
+.article-number-container {
+  height: 73rem;
+  width: 50%;
+}
+
+.article-possibilities-active .article-number-container {
+  background-image: url("..//images/be-active_1024.jpg");
+}
+
+.article-possibilities-find .article-number-container {
+  background-image: url("..//images/find-contact_1024.jpg");
+}
+
+.article-possibilities-work .article-number-container {
+  background-image: url("..//images/work-it_1024.jpg");
+}
+
+.article-number-possibilities {
+  width: 17rem;
+  height: 17rem;
+  margin-top: 20rem;
+  margin-left: calc(50vw - 8.5rem);
+}
+
+.article-number-possibilities::after {
+  bottom: 6rem;  
+  left: 7.3rem;
+}
+
+.header-possibilities {
+  padding-top: 24rem;
+  padding-left: 13rem;
+  font-size: 8rem;
+}
+
+.section-possibilities .article-content {
+  font-size: 2.4rem;
+  padding-left: 13rem;
+  padding-top: 10rem;
+}
+
+.article-possibilities-find .article-number-container {
+  order: 1;
+}
+
+.article-possibilities-find .article-content-conteiner {
+  width: 50%;
+}
+
+.article-possibilities-find .article-number-possibilities {
+  left: 0;
+  margin-left: calc(50vw - 8.5rem);
+}
+
+.article-content-conteiner .article-content {
+  max-width: 63rem;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-image: url("../images/game_1920.jpg");
+}
+
+.logo-download-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rem;
+}
+
+.logo-container {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 4rem;
+  margin: 0;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.download {
+  padding-top: 0;
+  padding-left: 3rem;
+}
+
+.download-content {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.footer .stores-links {
+  padding-top: 16rem;
+}
+
+.footer .logo-text {
+  padding-top: 25rem;
+  padding-bottom: 5rem;
+} 
+
+}
