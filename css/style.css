@@ -91,11 +91,9 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
-
-   
+ 
 .header-title-end {
   padding-left: 4.5rem;
-  
 }
 
 .stores-links {
@@ -448,12 +446,10 @@ html {
 }
 
 .header-title {
-  padding-bottom: 32vh;
   font-size: 6.4rem;
   margin-left: 9rem;
   margin-right: 9rem;
 }
-
  
 .header-title-end {
   padding-left: 10rem;
@@ -528,8 +524,6 @@ html {
 .article-connection {
   background-color: #ffffff;
 }
-
-
 
 .article-number {
   font-size: 1.8rem;
@@ -673,13 +667,12 @@ html {
 
 .header-title {
   font-size: 9rem;
-  margin-left: 20rem;
+  margin-left: 10vw;
   margin-right: auto;
 }
-
  
 .header-title-end {
-  padding-left: 44rem;
+  padding-left: 23vw;
 }
 
 .stores-links {
