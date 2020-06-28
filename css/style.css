@@ -28,13 +28,14 @@ html {
   
 .page {
   width: 100vw;
+  
 }
  
 /*Header*/
 
 .header {
   max-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../images/football_767.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,9 +57,9 @@ html {
 
 .header-content-container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 100;
@@ -68,13 +69,19 @@ html {
   display: block;
   width: 13.5rem;
   fill: #ffffff;
-  padding-top: 3rem;  
+  padding-top: 5vh;  
+  padding-bottom: 20vh;
+}
+
+
+.header-title-container {
+  flex-grow: 1;
 }
 
 .header-title {
   max-width: 100%;
   color: #ffffff;
-  padding-top: 13rem;
+  padding-bottom: 15vh;
   font-size: 2.8rem; 
   font-family: OpenSans-Bold;
   text-transform: uppercase;
@@ -82,20 +89,21 @@ html {
   margin-right: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
    
 .header-title-end {
   padding-left: 4.5rem;
+  
 }
 
 .stores-links {
-  padding-top: 8.5rem;
-  padding-bottom: 8.5rem;
+  padding-bottom: 15vh;
   font-size: 0.8rem;
   font-style: normal;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 .stores {
@@ -178,6 +186,7 @@ html {
 
 .article-title {
   display: flex;
+  align-items: center;
 }
 
 
@@ -215,9 +224,12 @@ html {
   font-size: 1.4rem;
   font-family: OpenSans-Bold;
   padding-left: 2rem;
-  vertical-align: middle;
   position: relative;
 } 
+
+.article-number-content {
+  padding-bottom: 0.5rem;
+}
 
 .article-number-growth {
   color: #8765dd;
@@ -236,7 +248,7 @@ html {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: 0.5rem;  
+  bottom: 0;  
   left: 2rem;
 }
 
@@ -249,7 +261,7 @@ html {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: 0.5rem;  
+  bottom: 0;  
   left: 2rem;
 }
 
@@ -304,7 +316,11 @@ html {
   margin-left: 2rem;
 }
 
-.article-number-possibilities::after {
+.article-number-content {
+  position: relative;
+}
+
+.article-number-possibilities .article-number-content::after {
   content: "";
   width: 1.5rem;
   height: 0.4rem;
@@ -312,16 +328,15 @@ html {
   background-color: #ffffff;
   position: absolute;
   z-index: 0;
-  top: auto;
-  right: auto;
-  bottom: 2rem;  
-  left: 2.62rem;
+  left: 0;
+  bottom: 0;  
   opacity: 0.5;
 }
 
 .header-possibilities {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   padding-left: 2rem;
+  color: #e7e7e7;
 }
 
 .section-possibilities .article-content {
@@ -428,11 +443,12 @@ html {
 
 .logo-text {
   width: 20.5rem;
-  padding-top: 4rem;  
+  padding-top: 4vh;
+  padding-bottom: 18vh;
 }
 
 .header-title {
-  padding-top: 16rem;
+  padding-bottom: 32vh;
   font-size: 6.4rem;
   margin-left: 9rem;
   margin-right: 9rem;
@@ -444,8 +460,7 @@ html {
 }
 
 .stores-links {
-  padding-top: 30rem;
-  padding-bottom: 8.5rem;
+  padding-bottom: 9vh;
   font-size: 1.4rem;
 }
 
@@ -502,9 +517,18 @@ html {
   top: 4.5rem;
 }
 
+.section-players {
+  overflow: hidden;
+}
+
 .main-article {
   padding-top: 3rem;
 }
+
+.article-connection {
+  background-color: #ffffff;
+}
+
 
 
 .article-number {
@@ -566,18 +590,17 @@ html {
   font-size: 2.4rem;
 }
 
-.article-number-possibilities::after {
+.article-number-possibilities .article-number-content::after {
   width: 2.5rem;
   height: 0.5rem;
   border-radius: 0.2rem;
-  bottom: 4rem;  
-  left: 4.8rem;
+  left: 0;
+  bottom: 0;  
 }
 
 .header-possibilities {
   font-size: 8rem;  
   padding-top: 8rem;
-  padding-left: 3rem;
 }
 
 .section-possibilities .article-content {
@@ -646,11 +669,9 @@ html {
 
 .logo-text {
   width: 40rem;
-  padding-top: 4rem;  
 }
 
 .header-title {
-  padding-top: 30vh;
   font-size: 9rem;
   margin-left: 20rem;
   margin-right: auto;
@@ -662,8 +683,6 @@ html {
 }
 
 .stores-links {
-  padding-top: 30rem;
-  padding-bottom: 12rem;
   font-size: 1.4rem;
 }
 
@@ -741,6 +760,11 @@ html {
 .article-number-container {
   height: 73rem;
   width: 50%;
+  flex-shrink: 0;
+}
+
+.article-content-container {
+  width: 50%;
 }
 
 .article-possibilities-active .article-number-container {
@@ -760,11 +784,6 @@ html {
   height: 17rem;
   margin-top: 20rem;
   margin-left: calc(50vw - 8.5rem);
-}
-
-.article-number-possibilities::after {
-  bottom: 6rem;  
-  left: 7.3rem;
 }
 
 .header-possibilities {
