@@ -382,7 +382,14 @@ html {
   justify-content: center;
   align-items: center;
 }
-   
+
+
+.logo-download-container {
+  padding-top: 17.5vh;
+  padding-bottom: 12vh;
+  flex-grow: 1;
+}
+
 .logo-container {
   background-color: #553ba2;
   width: 7.5rem;
@@ -391,11 +398,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  
   margin: auto;
 }
 
 .logo {
+  
   display: block;
   width: 5rem;
   fill: #ffffff;
@@ -403,7 +411,8 @@ html {
 
 .download {
   text-transform: uppercase;
-  padding-top: 6rem;
+  padding-top: 10.5vh;
+  
   font-family: OpenSans-Bold;
 }
 
@@ -420,13 +429,12 @@ html {
 }
 
 .footer .stores-links {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 13.2vh;
 }
 
 .footer .logo-text {
   padding-top: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2.5vh;
 } 
  
 /*TABLET VERSION*/
@@ -617,11 +625,15 @@ html {
   background-image: url("../images/game_1280.jpg");
 }
 
+.logo-download-container {
+  padding-top: 12.5vh;
+  padding-bottom: 29vh;
+}
+
 .logo-container {
   width: 12rem;
   height: 12rem;
   border-radius: 3rem;
-  margin-top: 12rem;
 }
 
 .logo {
@@ -629,7 +641,8 @@ html {
 }
 
 .download {
-  padding-top: 8rem;
+  padding-top: 8.3vh;
+  
 }
 
 .download-title {
@@ -641,13 +654,12 @@ html {
 }
 
 .footer .stores-links {
-  padding-top: 28rem;
-  padding-bottom: 5rem;
+  padding-bottom: 5.2vh;
 }
 
 .footer .logo-text {
   padding-top: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 2vh;
 } 
 }
 
@@ -756,6 +768,7 @@ html {
   flex-shrink: 0;
 }
 
+
 .article-content-container {
   width: 50%;
 }
@@ -783,6 +796,13 @@ html {
   padding-top: 24rem;
   padding-left: 13rem;
   font-size: 8rem;
+}
+
+.article-possibilities-find .header-possibilities,
+.article-possibilities-find .article-content-conteiner .article-content {
+  padding-right: 13rem;
+  padding-left: 0;
+  margin-left: 10vw;
 }
 
 .section-possibilities .article-content {
@@ -818,7 +838,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20rem;
+  padding-top: 23.4vh;
+  padding-bottom: 14.5vh;
 }
 
 .logo-container {
@@ -843,12 +864,11 @@ html {
 }
 
 .footer .stores-links {
-  padding-top: 16rem;
+  padding-bottom: 26vh;
 }
 
 .footer .logo-text {
-  padding-top: 25rem;
-  padding-bottom: 5rem;
+  padding-bottom: 5.2vh;
 } 
 
 }
